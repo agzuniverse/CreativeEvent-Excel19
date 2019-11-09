@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.left {
+    width: 25%;
+    float: left;
+    background-color: red;
+    height: 80vh;
+    background-image: url('sideim.jpg');
+    background-size: cover;
+}
+
+.leftinside {
+    background-image: url('trolley.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+
+}
+
+.right {
+    width: 75%;
+    float: left;
+    min-height: 80vh;
+    background-color: white;
+    padding: 50px;
+}
+
+.maincontainer {
+    margin: 10vh 10vw;
+    box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    color: #555;
+    border-radius: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    margin: 20px;
+    clear: both;
+}
+
+.signupbtn {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: rgb(66, 133, 244);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.signupbtn:hover {
+    background-color: #679;
+}
+
+.signupbtn:active {
+    background-color: #457;
+}
+
+.signup {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+}
+
+.formleft {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.formright {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.email {
+    clear: both;
+    width: 90%;
+}
+
+.createbutton {
+    background-color: #77f;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px 40px;
+    font-size: 15px;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+    .maincontainer {
+        margin: 10px;
+        margin-top: 50px;
+    }
+}
