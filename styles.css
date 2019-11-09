@@ -84,7 +84,7 @@ hr {
 .items_wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .shopbtn {
@@ -109,9 +109,25 @@ hr {
   height: 80px;
 }
 
+.ads {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   .items_wrapper {
     flex-direction: column;
+  }
+
+  .ads {
+    flex-direction: column;
+  }
+
+  .banner {
+    width: 95vw;
   }
 
   .bg {
@@ -135,6 +151,7 @@ hr {
   .shopbtn {
     font-size: 1rem;
     width: 100px;
+    padding: 10px;
   }
 
   .nomob {
